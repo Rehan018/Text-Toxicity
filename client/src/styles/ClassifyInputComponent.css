@@ -1,0 +1,32 @@
+.classify-input-container {
+  margin-top: 20px;
+  width: 30%;
+  bottom: 0;
+  position: fixed;
+}
+
+.classify-input-form {
+  display: flex;
+  gap: 10px;
+}
+
+.classify-input-field {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.classify-submit-button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.classify-submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

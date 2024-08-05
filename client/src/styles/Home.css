@@ -1,0 +1,32 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.home-section {
+  padding: 20px;
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-button {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+}
+
+.empty-section {
+  flex: 1;
+}

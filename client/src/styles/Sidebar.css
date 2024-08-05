@@ -1,0 +1,85 @@
+
+.sidebar {
+  flex-basis: 250px;
+  padding: 20px;
+  width: 20%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-color: #f4f4f4;
+  border-right: 2px solid #4CAF50;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  color: #4CAF50;
+}
+
+.sidebar input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: calc(100% - 22px);
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar li:hover {
+  background-color: #f9f9f9;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #333;
+  flex-grow: 1;
+}
+
+.sidebar li .timestamp {
+  font-size: 12px;
+  color: #999;
+  margin-left: 10px;
+}
+
+.sidebar li .delete-button {
+  
+  color: rgb(25, 23, 23);
+  border: none;
+  
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+@media (max-width: 700px) {
+  .sidebar {
+    flex-basis: 100%;
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 2px solid #4CAF50;
+    order: 1;
+  }
+}
